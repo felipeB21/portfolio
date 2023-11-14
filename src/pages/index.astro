@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import GitHubCard from '../components/GitHubCard.astro';
+import LinkedinCard from '../components/LinkedinCard.astro';
+---
+
+<Layout title="My Portfolio">
+	<Header />
+
+	<main class="mt-32 flex justify-between items-center">
+		<section class="animate-fade animate-duration-1000 animate-delay-200">
+			<div class="font-bold text-xl">
+				<h2>Hola! soy <strong>Felipe Bolgar</strong></h2>
+				<div class="text-7xl mt-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text">
+					<h1>Full Stack</h1>
+					<span>Developer</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="flex flex-col items-center justify-center gap-5 animate-fade-left animate-duration-1000 animate-delay-200">
+			<GitHubCard />
+			<LinkedinCard />
+		</section>
+	</main>
+
+	<section class="animate-fade animate-duration-1000 animate-delay-[600ms] mt-20 flex items-start justify-between">
+		<div class="bg-gradient-to-r from-indigo-700 to-indigo-900 px-5 py-4 rounded">
+			<div class="flex items-center gap-3">
+				<h3 class="text-2xl font-medium">Front</h3>
+				<img src="/img/layer.png" alt="layer">
+			</div>
+			<p class="text-lg max-w-md mt-2">Desarrollador con experiencia en proyectos utilizando React y Astro, optimizando el trabajo con TailwindCSS y TypeScript. Apasionado por crear diseños amigables y divertidos que mejoren la experiencia y visibilidad del usuario.</p>
+		</div>
+		<div class="bg-gradient-to-r from-neutral-700 to-neutral-900 px-5 py-4 rounded">
+			<div class="flex items-center gap-3">
+				<h3 class="text-2xl font-medium">Back</h3>
+				<img class="w-[24px]" src="/img/lock.png" alt="lock">
+			</div>
+			<p class="text-lg max-w-md mt-2">Experto en Node.js y Express.js, especializado en middleware, gestión de sesiones, cookies y API. Enfoque centrado en la optimización del rendimiento y la seguridad. Actualizado con las últimas novedades de Node.js.</p>
+		</div>
+	</section>
+
+	<div class="animate-fade animate-duration-1000 animate-delay-[800ms] mt-32 text-center relative">
+		<a class=" text-lg bg-slate-200 text-black px-20 py-2 rounded-md hover:pr-28 [&>img]:hover:right-[366px] transition-all duration-500" href="/proyects">Mis Proyectos <img class="absolute top-[-0.8px] right-96 duration-500" src="/img/right-arrow.png" alt="arrow"></a>
+	</div>
+</Layout>

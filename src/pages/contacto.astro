@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="Contacto">
+	<Header />
+
+	<main class="mt-40 flex items-center justify-between">
+		<div>
+			<h1 class="text-5xl font-bold">Contacta conmigo</h1>
+			<p class="text-lg font-medium mt-2">Email: <span class="opacity-80 font-normal">bolgarfelipe@gmail.com</span></p>
+		</div>
+		<div class="mt-20 bg-slate-100 text-black w-[400px] px-4 py-4 rounded-md">
+			<form class="flex flex-col justify-center items-center" action="/contacto" method="post">
+				<label for="email" class="w-full font-medium">Email</label>
+				<input class="px-2 py-1 w-full bg-gray-200 rounded-md" type="email" name="email" id="email" required>
+				<label for="textarea" class="w-full mt-2 font-medium">Descripcion</label>
+				<textarea class="resize-none overflow-auto px-3 py-3 w-full bg-gray-200 rounded-md" name="textarea" id="textarea" cols="25" rows="4" required></textarea>
+				<button class="bg-blue-700 mt-2 text-white px-12 py-1 rounded-lg hover:bg-blue-800 duration-200">Enviar</button>
+			</form>
+		</div>
+	</main>
+</Layout>
