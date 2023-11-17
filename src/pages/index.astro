@@ -8,7 +8,7 @@ import LinkedinCard from '../components/LinkedinCard.astro';
 <Layout title="My Portfolio">
 	<Header />
 
-	<main class="mt-32 flex justify-between items-center">
+	<main class="mt-32 flex flex-col sm:gap-0 gap-5 sm:flex-row justify-between items-start sm:items-center">
 		<section class="animate-fade animate-duration-1000 animate-delay-200">
 			<div class="font-bold text-xl">
 				<h2>Hola! soy <strong>Felipe Bolgar</strong></h2>
@@ -25,7 +25,7 @@ import LinkedinCard from '../components/LinkedinCard.astro';
 		</section>
 	</main>
 
-	<section class="animate-fade animate-duration-1000 animate-delay-[600ms] mt-20 flex items-start justify-between">
+	<section class="animate-fade animate-duration-1000 animate-delay-[600ms] mt-20 flex flex-col gap-3 sm:flex-row items-start justify-between">
 		<div class="bg-gradient-to-r from-indigo-700 to-indigo-900 px-5 py-4 rounded">
 			<div class="flex items-center gap-3">
 				<h3 class="text-2xl font-medium">Front</h3>
@@ -42,7 +42,7 @@ import LinkedinCard from '../components/LinkedinCard.astro';
 		</div>
 	</section>
 
-	<div class="animate-fade animate-duration-1000 animate-delay-[800ms] mt-32 text-center relative">
-		<a class=" text-lg bg-slate-200 text-black px-20 py-2 rounded-md hover:pr-28 [&>img]:hover:right-[366px] transition-all duration-500" href="/proyects">Mis Proyectos <img class="absolute top-[-0.8px] right-96 duration-500" src="/img/right-arrow.png" alt="arrow"></a>
+	<div class="animate-fade animate-duration-1000 animate-delay-[800ms] mt-32 text-center relative mb-12">
+		<a class=" text-lg bg-slate-200 text-black px-20 py-2 rounded-md hover:pr-28 [&>img]:hover:right-[366px] transition-all duration-500" href="/proyects">Mis Proyectos <img class="absolute lg:inline-block hidden top-[-0.8px] right-96 duration-500" src="/img/right-arrow.png" alt="arrow"></a>
 	</div>
 </Layout>

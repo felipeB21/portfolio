@@ -6,12 +6,12 @@ import Header from '../components/Header.astro';
 <Layout title="Contacto">
 	<Header />
 
-	<main class="mt-40 flex items-center justify-between">
+	<main class="mt-40 flex flex-col md:flex-row items-center justify-between">
 		<div>
 			<h1 class="text-5xl font-bold">Contacta conmigo</h1>
 			<p class="text-lg font-medium mt-2">Email: <span class="opacity-80 font-normal">bolgarfelipe@gmail.com</span></p>
 		</div>
-		<div class="mt-20 bg-slate-100 text-black w-[400px] px-4 py-4 rounded-md">
+		<div class="mt-20 bg-slate-100 md:w-[400px] text-black px-4 py-4 rounded-md">
 			<form class="flex flex-col justify-center items-center" action="/contacto" method="post">
 				<label for="email" class="w-full font-medium">Email</label>
 				<input class="px-2 py-1 w-full bg-gray-200 rounded-md" type="email" name="email" id="email" required>
