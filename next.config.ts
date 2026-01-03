@@ -1,7 +1,22 @@
 import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
+
+const withMDX = createMDX({
+  extension: /\.mdx$/,
+});
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  pageExtensions: ["ts", "tsx", "mdx"],
+  images: {
+    remotePatterns: [
+      {
+        hostname: "cdn.weatherapi.com",
+      },
+      {
+        hostname: "avatars.githubusercontent.com",
+      },
+    ],
+  },
 };
 
-export default nextConfig;
+export default withMDX(nextConfig);
