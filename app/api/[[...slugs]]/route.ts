@@ -10,7 +10,20 @@ const app = new Elysia({ prefix: "/api/comments" })
     async ({ query }) => {
       const { target, limit, offset } = query;
       return await db
-        .select()
+        .select({
+          comment: {
+            id: comment.id,
+            content: comment.content,
+            userId: comment.userId,
+            target: comment.target,
+            createdAt: comment.createdAt,
+          },
+          user: {
+            id: user.id,
+            name: user.name,
+            image: user.image,
+          },
+        })
         .from(comment)
         .innerJoin(user, eq(comment.userId, user.id))
         .where(eq(comment.target, target))
