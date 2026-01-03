@@ -4,26 +4,30 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Weather from "@/components/weather";
 import CommentSection from "@/components/comments/section";
+import Socials from "@/components/socials";
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-20">
-      <div className="sm:flex justify-between items-center">
-        <div>
-          <div className="flex items-center gap-2">
-            <p>Hello! </p>
-            <Image
-              src={"/waving.png"}
-              alt="Waving Hand"
-              width={20}
-              height={20}
-            />
+      <div>
+        <div className="sm:flex justify-between items-center">
+          <div>
+            <div className="flex items-center gap-2">
+              <p>Hello! </p>
+              <Image
+                src={"/waving.png"}
+                alt="Waving Hand"
+                width={20}
+                height={20}
+              />
+            </div>
+            <h1 className="font-bold text-xl">
+              I&apos;m a Full Stack Web Developer.
+            </h1>
           </div>
-          <h1 className="font-bold text-xl">
-            I&apos;m a Full Stack Web Developer.
-          </h1>
+          <Weather />
         </div>
-        <Weather />
+        <Socials />
       </div>
       <div>
         <h2 className="text-5xl font-bold uppercase">
