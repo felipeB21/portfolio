@@ -9,7 +9,7 @@ import Socials from "@/components/socials";
 export default function Home() {
   return (
     <div className="flex flex-col gap-20">
-      <div>
+      <div className="flex flex-col gap-2">
         <div className="sm:flex justify-between items-center">
           <div>
             <div className="flex items-center gap-2">

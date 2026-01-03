@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Socials() {
   return (
-    <div className="flex items-center gap-2 mt-2">
+    <div className="flex items-center gap-2">
       <Button className="rounded-full" variant={"outline"} asChild>
         <Link href={"/felipebolgar.pdf"} download>
           Download CV <Download />

@@ -41,7 +41,7 @@ export default function Weather() {
 
   return (
     <div className="mb-1">
-      <div className="flex flex-col items-end">
+      <div className="flex flex-col sm:items-end">
         <div className="flex items-center">
           <p className="text-sm dark:text-stone-300 text-stone-700">
             {data?.current.temp_c}°C
