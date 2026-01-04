@@ -32,7 +32,7 @@ export default function Socials() {
         className="rounded-full w-9 h-9 p-0 flex items-center justify-center"
       >
         <Link
-          href="https://www.linkedin.com/in/felipe-bolgar-b08648285/"
+          href="https://www.linkedin.com/in/felipebolgar/"
           target="_blank"
           rel="noopener noreferrer"
           className="cursor-default"
