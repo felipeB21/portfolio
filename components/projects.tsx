@@ -62,7 +62,7 @@ export default function Projects() {
                 height={200}
                 sizes="(max-width: 640px) 100vw, 300px"
                 className="rounded-lg w-full h-auto"
-                priority={index === 0}
+                priority
               />
             </CardContent>
             <CardFooter className="flex items-center gap-1">
