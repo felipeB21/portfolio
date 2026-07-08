@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/next";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
@@ -23,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
     default: "Felipe Bolgar - Full Stack Developer",
-    template: "%s | Felipe Bolgar",
+    template: "%s - Felipe Bolgar",
   },
   description:
     "Argentine full-stack developer building SaaS products and developer tools with Next.js, TypeScript, and PostgreSQL.",
@@ -86,9 +83,8 @@ export default function RootLayout({
         "h-full",
         "antialiased",
         geistSans.variable,
-        geistMono.variable,
         "font-sans",
-        inter.variable,
+        inter.className,
       )}
     >
       <body>
@@ -98,7 +94,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="max-w-3xl my-14 m-auto p-5"> {children}</main>
+          <Header />
+          <main className="max-w-2xl my-2 m-auto p-5">{children}</main>
+          <Footer />
           <Analytics />
         </ThemeProvider>
       </body>

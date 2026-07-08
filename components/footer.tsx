@@ -1,38 +1,15 @@
-"use client";
-
-import { useSyncExternalStore } from "react";
-import { useTheme } from "next-themes";
-import { Button } from "./ui/button";
-
-const emptySubscribe = () => () => {};
-
-function useIsClient() {
-  return useSyncExternalStore(
-    emptySubscribe,
-    () => true,
-    () => false,
-  );
-}
+import Weather from "./weather";
+import Clock from "./clock";
 
 export default function Footer() {
-  const { theme, setTheme } = useTheme();
-  const isClient = useIsClient();
+  const year = new Date().getFullYear();
 
   return (
-    <footer className="mb-14">
-      <div className="flex flex-col sm:flex-row justify-between items-center gap-2 mt-10">
-        <p className="text-xs text-muted-foreground text-pretty">
-          &copy; {new Date().getFullYear()} Felipe Bolgar. All rights reserved.
-        </p>
-        <Button
-          variant="link"
-          size="xs"
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="font-mono"
-          disabled={!isClient}
-        >
-          theme: {isClient ? theme : "\u00A0"}
-        </Button>
+    <footer className="flex items-center justify-between max-w-2xl m-auto p-5  w-full">
+      <p>&copy; {year} Felipe Bolgar. All rights reserved.</p>
+      <div className="flex items-center gap-3">
+        <Clock />
+        <Weather />
       </div>
     </footer>
   );
