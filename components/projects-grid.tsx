@@ -48,6 +48,13 @@ const PROJECTS: Project[] = [
     href: "https://wincurs.vercel.app",
   },
   {
+    name: "Spotify",
+    description:
+      "An interactive replica of the Spotify web interface. This project recreates the user experience (UI/UX) of the popular streaming platform, featuring a fully functional music player that allows users to listen to songs in real-time",
+    stack: ["React", "Zustand", "TypeScript", "TailwindCSS"],
+    href: "https://spotifyui.vercel.app",
+  },
+  {
     name: "AnonAsk",
     description:
       "Ask anything, anonymously — questions and replies with identities hidden.",

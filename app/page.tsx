@@ -35,6 +35,12 @@ const FEATURED = [
       "A community hub to upload and download custom Windows cursor packs.",
     href: "https://wincurs.vercel.app",
   },
+  {
+    name: "Spotify",
+    description:
+      "An interactive replica of the Spotify web interface. This project recreates the user experience (UI/UX) of the popular streaming platform, featuring a fully functional music player that allows users to listen to songs in real-time",
+    href: "https://spotifyui.vercel.app",
+  },
 ];
 
 const container: Variants = {
