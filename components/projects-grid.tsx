@@ -16,6 +16,21 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
+  name: "AskYourDocs",
+  description:
+    "Upload PDFs and documents, then chat with an AI-powered assistant to ask questions and get answers from your files.",
+  stack: [
+    "Next.js",
+    "TanStack Query",
+    "TailwindCSS",
+    "PostgreSQL",
+    "Vercel AI SDK",
+    "ShadcnUI",
+    "Supabase",
+  ],
+  href: "https://askyourdocs.app",
+},
+  {
     name: "Cábala",
     description:
       "Predict Argentine football and CONMEBOL matches, earn points, climb the leaderboard.",
