@@ -50,7 +50,7 @@ const PROJECTS: Project[] = [
   {
     name: "Spotify",
     description:
-      "An interactive replica of the Spotify web interface. This project recreates the user experience (UI/UX) of the popular streaming platform, featuring a fully functional music player that allows users to listen to songs in real-time",
+      "An interactive replica of the Spotify web interface. This project recreates the user experience (UI/UX) of the popular streaming platform, featuring a fully functional music player that all[...]",
     stack: ["React", "Zustand", "TypeScript", "TailwindCSS"],
     href: "https://spotifyui.vercel.app",
   },
@@ -83,6 +83,21 @@ const PROJECTS: Project[] = [
       "WebSockets",
     ],
     href: "https://github.com/felipeB21/realtime-chat",
+  },
+  {
+    name: "AskYourDocs",
+    description:
+      "Upload PDFs and documents, then chat with an AI-powered assistant to ask questions and get answers from your files.",
+    stack: [
+      "Next.js",
+      "TanStack Query",
+      "TailwindCSS",
+      "PostgreSQL",
+      "Vercel AI SDK",
+      "ShadcnUI",
+      "Supabase",
+    ],
+    href: "https://askyourdocs.app",
   },
 ];
 
