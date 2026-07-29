@@ -23,6 +23,12 @@ const STACK = [
 ];
 
 const FEATURED = [
+   {
+  name: "AskYourDocs",
+  description:
+    "Upload PDFs and documents, then chat with an AI-powered assistant to ask questions and get answers from your files.",
+  href: "https://askyourdocs.app",
+},
   {
     name: "Cábala",
     description:
@@ -34,13 +40,7 @@ const FEATURED = [
     description:
       "A community hub to upload and download custom Windows cursor packs.",
     href: "https://wincurs.vercel.app",
-  },
-  {
-    name: "Spotify",
-    description:
-      "An interactive replica of the Spotify web interface. This project recreates the user experience (UI/UX) of the popular streaming platform, featuring a fully functional music player that allows users to listen to songs in real-time",
-    href: "https://spotifyui.vercel.app",
-  },
+  }
 ];
 
 const container: Variants = {
